@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t-- > 0){
+	    int a,b,c,d,e,f;
+	    cin>> a >> b >> c >> d >> e >> f;
+	    
+	    if(a + b + c > d + e + f){
+	        cout << "Dragon" << endl;
+	    }
+	    else if (a + b + c < d + e + f){
+	         cout << "Sloth" << endl;
+	    }
+	    else if (a > d){
+	         cout << "Dragon" << endl;
+	    }
+	    else if (a < d){
+	         cout << "Sloth" << endl;
+	    }
+	    else if (b > e){
+	         cout << "Dragon" << endl;
+	    }
+	    else if (b < e){
+	         cout << "Sloth" << endl;
+	    }
+	     else if (c > f){
+	         cout << "Dragon" << endl;
+	    }
+	    else if (c < f){
+	         cout << "Sloth" << endl;
+	    }
+	    else {
+	    cout << "Tie" << endl;
+	}
+	}
+	return 0;
+}
